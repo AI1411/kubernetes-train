@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod2
+spec:
+  containers:
+    - name: nginx-pod
+      image: nginx:1.20
+
+    - name: centos-pod
+      image: centos:7
+      command:
+        - "/sbin/init"
